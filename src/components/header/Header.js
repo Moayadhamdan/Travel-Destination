@@ -5,6 +5,7 @@ function Header() {
         <header>
           <h1>Travel Destinations</h1>
         </header>
+        
       );
 }
 
