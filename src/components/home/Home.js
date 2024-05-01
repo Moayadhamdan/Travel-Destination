@@ -1,13 +1,15 @@
 import Header from '../header/Header.js';
 import Tours from '../tours/Tours.js';
 import Footer from '../footer/Footer.js';
-function Home(prop){
+const data=require("../../data/db.json");
+
+function Home(){
     return (
         <div className="container">
-        <Header />
+        <Header/>
         <main>
           {
-            prop.data.map((element)=>
+            data.map((element)=>
               <Tours name={element.name} image={element.image} info={element.info} price={element.price} />
             )
           }
